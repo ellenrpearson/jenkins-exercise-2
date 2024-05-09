@@ -35,7 +35,7 @@ pipeline {
         stage('Deploy') {
 
             steps {
-
+		sh 'touch deploy.sh'
                 sh 'cat ./deploy.sh'
 
                 sh 'echo "Deploying..."'
